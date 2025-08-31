@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/lenovo/saif-portfolio/app/page.tsx"],"sourcesContent":["import HeroSection from \"@/components/HeroSection\";\nimport AboutSection from \"@/components/AboutSection\";\nimport EducationSection from \"@/components/EducationSection\";\nimport SkillsSection from \"@/components/SkillsSection\";\nimport LanguageSection from \"@/components/LanguageSection\";\nimport ContactSection from \"@/components/ContactSection\";\n\nexport default function Home() {\n  return (\n    <>\n      <HeroSection />\n      <AboutSection />\n      <EducationSection />\n      <SkillsSection />\n      <LanguageSection />\n      <ContactSection />\n    </>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAOe,SAAS;IACtB,qBACE;;0BACE,8OAAC;;;;;0BACD,8OAAC;;;;;0BACD,8OAAC;;;;;0BACD,8OAAC;;;;;0BACD,8OAAC;;;;;0BACD,8OAAC;;;;;;;AAGP","debugId":null}}]
+}
