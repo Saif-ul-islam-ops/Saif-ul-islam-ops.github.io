@@ -26,10 +26,13 @@ const HeroSection = () => {
         <div className="glass-card p-6 sm:p-8 md:p-12 rounded-2xl md:rounded-3xl max-w-4xl mx-auto animate-slide-in-up">
           {/* Animated intro text */}
           <div className="mb-6 md:mb-8">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 animate-pulse-neon leading-tight">
-              Hi, I'm<br />
-              <span className="font-black cyber-text">Saif ul Islam</span>
-            </h1>
+       <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 leading-tight">
+  <span className="font-medium">Hi, I'm</span><br />
+  <span className="font-black cyber-text text-3xl sm:text-4xl md:text-5xl lg:text-7xl animate-pulse-neon">
+    Saif ul Islam
+  </span>
+</h1>
+
             
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto px-2 sm:px-0">
               — a passionate tech enthusiast & security learner building sleek, responsive digital interfaces and learning the art of digital defense.
@@ -44,7 +47,7 @@ const HeroSection = () => {
               variant="outline"
             >
               <Mail className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5 group-hover:text-cyber-blue transition-colors" />
-              📨 Hire Me
+               Hire Me
             </Button>
             
             <Button 
@@ -53,7 +56,7 @@ const HeroSection = () => {
               variant="outline"
             >
               <Download className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5 group-hover:text-cyber-blue transition-colors" />
-              📄 Download My CV
+               Download My CV
             </Button>
           </div>
         </div>

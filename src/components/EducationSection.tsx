@@ -8,20 +8,22 @@ const EducationSection = () => {
   const education = [
     {
       degree: "BS in Cybersecurity",
-      institution: "Pak Austria Fachhochschule Institute of Applied Sciences",
+      institution: "Pak Austria Fachhochschule Institute of Applied Sciences and Technology",
       gpa: "CGPA 3.57",
       status: "Current",
-      subjects: ["Network Security", "Ethical Hacking", "Digital Forensics", "Risk Management"]
+      subjects: ["Network Security", "Ethical Hacking", "OOP"]
     },
     {
       degree: "HSSC",
       institution: "Sir Syed Model School and College Haripur",
+      gpa: "Marks 86.3%",
       subjects: ["Physics", "Computer", "Mathematics"],
       status: "Completed"
     },
     {
       degree: "SSC",
       institution: "Government High School Alooli",
+       gpa: "Marks 86.3%",
       subjects: ["Physics", "Chemistry", "Mathematics", "Biology"],
       status: "Completed"
     }
