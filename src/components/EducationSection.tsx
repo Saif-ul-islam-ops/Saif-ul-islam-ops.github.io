@@ -11,7 +11,7 @@ const EducationSection = () => {
       institution: "Pak Austria Fachhochschule Institute of Applied Sciences and Technology",
       gpa: "CGPA 3.57",
       status: "Current",
-      subjects: ["Network Security", "Ethical Hacking", "OOP"]
+      subjects: ["Programming Fundamentals", "Calculus", "OOP", "Applied Physics", "ICT"]
     },
     {
       degree: "HSSC",

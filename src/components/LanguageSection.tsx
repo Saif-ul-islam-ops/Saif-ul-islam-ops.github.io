@@ -10,14 +10,16 @@ const LanguageSection = () => {
       name: "English",
       level: 70,
       proficiency: "B2–C1",
-      flag: "🇺🇸",
+      flagUrl: "https://flagcdn.com/120x90/gb.png",
+      flag: null,
       description: "Professional working proficiency"
     },
     {
       name: "Urdu",
       level: 100,
       proficiency: "Native",
-      flag: "🇵🇰",
+      flagUrl: "https://flagcdn.com/120x90/pk.png",
+      flag: null,
       description: "Native speaker"
     },
     {
@@ -53,10 +55,19 @@ const LanguageSection = () => {
                   className="group p-4 sm:p-6 rounded-xl bg-steel-dark/30 border border-steel/30 hover:border-cyber-blue/50 transition-all duration-300 hover:transform hover:scale-105 active:scale-100 animate-slide-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="text-center mb-4 sm:mb-6">
-                    <div className="text-4xl sm:text-5xl md:text-6xl mb-3 sm:mb-4 group-hover: transition-all duration-300">
-                      {language.flag}
-                    </div>
+                  <div className="mb-3 sm:mb-4 flex justify-center">
+                    {language.flagUrl ? (
+                      <img
+                  src={language.flagUrl}
+                   srcSet={`${language.flagUrl.replace("40x30", "80x60")} 2x,
+                    ${language.flagUrl.replace("40x30", "120x90")} 3x`}
+                     width="80"
+                    height="60"
+                   alt={`${language.name} flag`}
+                    className="rounded-md shadow-md" />) : (
+                   <span className="text-4xl sm:text-5xl md:text-6xl transition-all duration-300">
+                    {language.flag}</span>)}</div>
+                 <div className="space-y-3 sm:space-y-4">
                     <h4 className="text-lg sm:text-xl font-bold mb-2 leading-tight">{language.name}</h4>
                     <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{language.description}</p>
                   </div>
