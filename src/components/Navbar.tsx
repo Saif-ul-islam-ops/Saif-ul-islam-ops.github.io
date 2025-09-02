@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
     { name: "Home", href: "#hero" },
@@ -27,6 +28,7 @@ const Navbar = () => {
       const yOffset = -80; // offset for fixed navbar
       const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
+      setMenuOpen(false); // close menu on mobile after click
     }
   };
 
@@ -39,16 +41,16 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
-        {/* Logo / Name */}
+        {/* Logo */}
         <a
           href="#hero"
           className="text-xl sm:text-2xl font-bold cyber-text hover:text-cyber-blue transition-colors"
         >
-          Saif<span className="text-cyber-blue">.</span>
+          Saif<span className="text-cyber-blue"></span>
         </a>
 
-        {/* Navigation Links */}
-        <ul className="flex space-x-6 sm:space-x-8">
+        {/* Desktop Menu */}
+        <ul className="hidden sm:flex space-x-6 sm:space-x-8">
           {navItems.map((item, index) => (
             <li key={index}>
               <button
@@ -61,7 +63,45 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        {/* Mobile Hamburger */}
+        <button
+          className="sm:hidden flex flex-col justify-center items-center gap-1.5 w-8 h-8"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span
+            className={`block h-0.5 w-full bg-white transition-transform ${
+              menuOpen ? "rotate-45 translate-y-2" : ""
+            }`}
+          ></span>
+          <span
+            className={`block h-0.5 w-full bg-white transition-opacity ${
+              menuOpen ? "opacity-0" : "opacity-100"
+            }`}
+          ></span>
+          <span
+            className={`block h-0.5 w-full bg-white transition-transform ${
+              menuOpen ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          ></span>
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <ul className="sm:hidden flex flex-col items-center bg-steel-dark/90 backdrop-blur-md w-full py-4 space-y-4">
+          {navItems.map((item, index) => (
+            <li key={index}>
+              <button
+                onClick={() => scrollToSection(item.href.slice(1))}
+                className="text-base font-medium text-white hover:text-cyber-blue transition-colors"
+              >
+                {item.name}
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
     </nav>
   );
 };
