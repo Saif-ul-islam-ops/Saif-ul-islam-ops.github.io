@@ -62,7 +62,7 @@ const SkillsSection = () => {
   };
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+    <section id="skills" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
       <div className="container mx-auto">
         <div className="text-center mb-12 md:mb-16 animate-slide-in-up">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 cyber-text">Skills & Certifications</h2>

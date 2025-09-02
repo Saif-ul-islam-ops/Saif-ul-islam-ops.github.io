@@ -37,6 +37,10 @@
   padding: 2em;
 }
 
+.html {
+  scroll-behavior: smooth;
+}
+
 .read-the-docs {
   color: #888;
 }
