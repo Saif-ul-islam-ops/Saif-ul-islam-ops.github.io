@@ -31,6 +31,12 @@ const EducationSection = () => {
 
   return (
     <section id="education" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+       {/* Decorative/animated background elements (optional, like Hero) */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-10 left-4 md:top-20 md:left-20 w-16 h-16 md:w-32 md:h-32 bg-cyber-blue/20 rounded-full blur-xl animate-float"></div>
+        <div className="absolute bottom-16 right-4 md:bottom-32 md:right-32 w-12 h-12 md:w-24 md:h-24 bg-accent/20 rounded-full blur-lg animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 left-1/4 w-8 h-8 md:w-16 md:h-16 bg-steel-light/30 rounded-full blur-md animate-float" style={{ animationDelay: '4s' }}></div>
+      </div>
       <div className="container mx-auto">
         <div className="text-center mb-12 md:mb-16 animate-slide-in-up">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 cyber-text">🎓 Education</h2>

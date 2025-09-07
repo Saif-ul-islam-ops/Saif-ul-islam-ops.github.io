@@ -27,7 +27,7 @@ const ProjectsSection = () => {
     },
      {
       title: "Laser Security System",
-      tech: ["Arduino", "HC-05 Blutooth Module", "C Language"],
+      tech: ["Arduino", "HC-05 Blutooth Module", "C Language", "MIT App Inventor"],
       description: "Laser security system for anti-theft purpose, a small project.",
       github: "",
       live: "",
@@ -36,6 +36,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+    
       <div className="container mx-auto">
         <div className="text-center mb-12 md:mb-16 animate-slide-in-up">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 cyber-text">

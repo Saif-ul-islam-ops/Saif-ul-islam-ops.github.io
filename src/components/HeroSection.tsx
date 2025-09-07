@@ -23,7 +23,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 text-center relative z-10">
-        <div className="glass-card p-6 sm:p-8 md:p-12 rounded-2xl md:rounded-3xl max-w-4xl mx-auto animate-slide-in-up">
+        <div className="glass-card p-6 sm:p-8 md:p-12 rounded-2xl md:rounded-3xl max-w-4xl mx-auto neon-glow animate-slide-in-up">
           {/* Animated intro text */}
           <div className="mb-6 md:mb-8">
        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 leading-tight">

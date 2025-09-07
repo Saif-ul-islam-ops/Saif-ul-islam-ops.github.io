@@ -1,13 +1,12 @@
 "use client";
 
-
 import { useState } from "react";
 import { Card } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
 import { Label } from "../components/ui/label";
-import { MapPin, Send, CheckCircle } from "lucide-react";
+import { MapPin, Send, CheckCircle, Instagram, Github, Linkedin, Users } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
 
 const ContactSection = () => {
@@ -25,9 +24,7 @@ const ContactSection = () => {
       const response = await fetch('https://formspree.io/f/xblkayyl', {
         method: 'POST',
         body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
+        headers: { 'Accept': 'application/json' }
       });
 
       if (response.ok) {
@@ -57,19 +54,20 @@ const ContactSection = () => {
         <div className="text-center mb-12 md:mb-16 animate-slide-in-up">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 cyber-text">📞 Contact</h2>
           <p className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 cyber-text animate-pulse-neon px-4 sm:px-0">
-            "Let's Create Something Iconic — Together!"
+            "Let's Get connected!"
           </p>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4 sm:px-0">
-            Reach out for small trainings, mini-tasks, or just to explore learning together.
+            Reach out for mini-tasks or just to explore learning together.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-12">
-          {/* Contact Information */}
+          {/* Contact Information and Social Links */}
           <div className="space-y-6 md:space-y-8">
+            {/* Location Card */}
             <Card className="glass-card p-6 sm:p-8 neon-glow animate-slide-in-left">
               <div className="flex items-start gap-3 sm:gap-4">
-                <div className="p-2 sm:p-3 rounded-xl bg-cyber-blue/20 animate-float flex-shrink-0">
+                <div className="p-2 sm:p-3 rounded-xl bg-cyber-blue/20 flex-shrink-0">
                   <MapPin className="h-6 w-6 sm:h-8 sm:w-8 text-cyber-blue" />
                 </div>
                 <div className="min-w-0 flex-1">
@@ -78,6 +76,47 @@ const ContactSection = () => {
                     📍 Mohalla Negar, Village Alooli<br />
                     Haripur, Pakistan
                   </p>
+                </div>
+              </div>
+            </Card>
+
+            {/* Social Links Card */}
+            <Card className="glass-card p-6 sm:p-8 neon-glow animate-slide-in-left">
+              <div className="flex items-start gap-3 sm:gap-4">
+                {/* Left Glowing Icon */}
+                <div className="p-2 sm:p-3 rounded-xl bg-cyber-blue/20 flex-shrink-0">
+                  <Users className="h-6 w-6 sm:h-8 sm:w-8 text-cyber-blue" />
+                </div>
+
+                {/* Right: Social Icons */}
+                <div className="flex-1 flex flex-col gap-2">
+                  <h3 className="text-lg sm:text-xl font-bold mb-2 cyber-text">Social Profiles</h3>
+                  <div className="flex gap-4 sm:gap-6">
+                    <a
+                      href="https://www.instagram.com/your_instagram_profile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 rounded-full bg-cyber-blue/20 hover:bg-cyber-blue/30 transition-colors flex items-center justify-center "
+                    >
+                      <Instagram className="h-6 w-6 text-cyber-blue" />
+                    </a>
+                    <a
+                      href="https://github.com/your_github_profile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 rounded-full bg-cyber-blue/20 hover:bg-cyber-blue/30 transition-colors flex items-center justify-center "
+                    >
+                      <Github className="h-6 w-6 text-cyber-blue" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/your_linkedin_profile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 rounded-full bg-cyber-blue/20 hover:bg-cyber-blue/30 transition-colors flex items-center justify-center "
+                    >
+                      <Linkedin className="h-6 w-6 text-cyber-blue" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -155,7 +194,6 @@ const ContactSection = () => {
                   </>
                 )}
                 
-                {/* Ripple effect on click */}
                 <div className="absolute inset-0 bg-cyber-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Button>
             </form>
