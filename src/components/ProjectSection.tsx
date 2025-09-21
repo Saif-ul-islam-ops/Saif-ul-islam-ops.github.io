@@ -16,7 +16,7 @@ const ProjectsSection = () => {
       tech: ["Next.js", "TailwindCSS", "TypeScript", "HTML", "JavaScript"],
       description: "A cyber-themed personal portfolio with animations, hosted on GitHub Pages.",
       github: "https://github.com/saif-ul-islam-ops/portfolio",
-      live: "https://saif-ul-islam-ops.github.io/",
+      live: "",
     },
     {
       title: "Inventory Management System",

@@ -93,7 +93,7 @@ const ContactSection = () => {
                   <h3 className="text-lg sm:text-xl font-bold mb-2 cyber-text">Social Profiles</h3>
                   <div className="flex gap-4 sm:gap-6">
                     <a
-                      href="https://www.instagram.com/your_instagram_profile"
+                      href="https://www.instagram.com/saifee_76?igsh=N3I0eWx3cndjc3kx"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-3 rounded-full bg-cyber-blue/20 hover:bg-cyber-blue/30 transition-colors flex items-center justify-center "
@@ -101,7 +101,7 @@ const ContactSection = () => {
                       <Instagram className="h-6 w-6 text-cyber-blue" />
                     </a>
                     <a
-                      href="https://github.com/your_github_profile"
+                      href="https://github.com/saif-ul-islam-ops"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-3 rounded-full bg-cyber-blue/20 hover:bg-cyber-blue/30 transition-colors flex items-center justify-center "
@@ -109,7 +109,7 @@ const ContactSection = () => {
                       <Github className="h-6 w-6 text-cyber-blue" />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/your_linkedin_profile"
+                      href="https://linkedin.com/in/saif-ul-islam-473283380"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-3 rounded-full bg-cyber-blue/20 hover:bg-cyber-blue/30 transition-colors flex items-center justify-center "
