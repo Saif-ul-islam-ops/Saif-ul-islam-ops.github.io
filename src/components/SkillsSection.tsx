@@ -32,6 +32,12 @@ const SkillsSection = () => {
 
   const certifications = [
     {
+      title: "Certified Associate Penetration Teseter (CAPT)",
+      provider: "Hackviser",
+      description: "Proficiency in penetration testing methodologies, tools, and techniques through hands-on assessment.",
+      downloadLink: "https://drive.google.com/file/d/1zrNjv2u6pZwGJGCxX__cpCyTWEnxLd-u/view?usp=sharing"
+    },
+    {
       title: "Python AI Development",
       provider: "Mimo",
       description: "Intro to Python AI model design and implementation",
