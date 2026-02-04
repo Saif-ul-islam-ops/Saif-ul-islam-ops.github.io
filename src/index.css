@@ -6,62 +6,80 @@
 
 @layer base {
   :root {
-    /* Dark Base Colors */
-    --background: 0 0% 3%;
-    --foreground: 0 0% 95%;
+  /* Background — deep navy, not black */
+  --background: 222 47% 9%;
+  --foreground: 210 25% 92%;
 
-    /* Metallic Card System */
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 90%;
+  /* Cards / surfaces */
+  --card: 222 40% 12%;
+  --card-foreground: 210 25% 92%;
 
-    --popover: 0 0% 5%;
-    --popover-foreground: 0 0% 95%;
+  --popover: 222 40% 10%;
+  --popover-foreground: 210 25% 92%;
 
-    /* Neon Blue Primary */
-    --primary: 200 100% 60%;
-    --primary-foreground: 0 0% 5%;
+  /* The famous Hackviser green */
+  --primary: 120 100% 62%;
+  --primary-foreground: 222 47% 9%;
 
-    /* Steel Secondary */
-    --secondary: 220 20% 25%;
-    --secondary-foreground: 0 0% 90%;
+  /* Steel gray secondary text */
+  --secondary: 215 20% 28%;
+  --secondary-foreground: 210 20% 85%;
 
-    /* Muted Steel */
-    --muted: 220 15% 15%;
-    --muted-foreground: 220 10% 70%;
+  /* Muted text */
+  --muted: 215 15% 18%;
+  --muted-foreground: 215 12% 65%;
 
-    /* Metallic Accent */
-    --accent: 210 80% 70%;
-    --accent-foreground: 0 0% 5%;
+  /* Accent (slightly brighter green for highlights) */
+  --accent: 125 100% 68%;
+  --accent-foreground: 222 47% 9%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    /* Steel Borders */
-    --border: 220 20% 20%;
-    --input: 220 20% 15%;
-    --ring: 200 100% 60%;
+  /* Borders & inputs */
+  --border: 215 20% 22%;
+  --input: 215 20% 16%;
+  --ring: 120 100% 62%;
 
     /* Cybersecurity Theme Colors */
-    --cyber-blue: 200 100% 60%;
-    --cyber-blue-glow: 200 100% 70%;
-    --steel: 220 20% 30%;
-    --steel-light: 220 25% 40%;
-    --steel-dark: 220 15% 20%;
-    --neon-white: 0 0% 95%;
-    --glass: 220 20% 15%;
+    --cyber-blue: 120 100% 62%;
+    --cyber-blue-glow: 120 100% 72%;
+     /* Metallic steel tones */
+    --steel: 215 18% 26%;
+    --steel-light: 215 18% 34%;
+    --steel-dark: 222 40% 10%;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--steel-dark)));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--steel-dark)));
-    --gradient-metallic: linear-gradient(135deg, hsl(var(--steel)), hsl(var(--steel-light)));
-    --gradient-neon: linear-gradient(90deg, hsl(var(--cyber-blue)), hsl(var(--accent)));
+    --neon-white: 210 25% 95%;
+    --glass: 215 18% 16%;
 
-    /* Shadows */
-    --shadow-neon: 0 0 20px hsl(var(--cyber-blue) / 0.3);
-    --shadow-metallic: 0 8px 32px hsl(var(--steel-dark) / 0.4);
-    --shadow-glass: 0 8px 32px hsl(0 0% 0% / 0.3);
+   /* Gradients matching screenshot */
+  --gradient-hero: linear-gradient(
+    180deg,
+    hsl(222 47% 9%),
+    hsl(222 40% 12%)
+  );
 
-    --radius: 0.75rem;
+  --gradient-card: linear-gradient(
+    145deg,
+    hsl(222 40% 12%),
+    hsl(215 18% 18%)
+  );
+
+  --gradient-metallic: linear-gradient(
+    135deg,
+    hsl(var(--steel)),
+    hsl(var(--steel-light))
+  );
+
+  --gradient-neon: linear-gradient(
+    90deg,
+    hsl(var(--primary)),
+    hsl(var(--accent))
+  );
+
+  /* Shadows tuned for green glow */
+  --shadow-neon: 0 0 25px hsl(var(--primary) / 0.35);
+  --shadow-metallic: 0 8px 32px hsl(222 40% 5% / 0.5);
+  --shadow-glass: 0 8px 32px hsl(0 0% 0% / 0.35);
+
+  --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 

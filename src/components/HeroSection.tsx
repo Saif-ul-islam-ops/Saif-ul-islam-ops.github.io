@@ -28,7 +28,7 @@ const HeroSection = () => {
           <div className="mb-6 md:mb-8">
        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 leading-tight">
   <span className="font-medium">Hi, I'm</span><br />
-  <span className="font-black cyber-text text-3xl sm:text-4xl md:text-5xl lg:text-7xl animate-pulse-neon">
+  <span className="font-black cyber-text text-3xl sm:text-4xl md:text-5xl lg:text-7xl ">
     Saif ul Islam
   </span>
 </h1>

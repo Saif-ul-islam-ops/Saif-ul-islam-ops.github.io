@@ -6,7 +6,7 @@ import { User, MapPin, Mail, Calendar } from "lucide-react";
 const AboutSection = () => {
   const personalInfo = [
     { icon: User, label: "Name", value: "Saif ul Islam" },
-    { icon: Calendar, label: "Date of Birth", value: "Jan 4, 2006" },
+  /*  { icon: Calendar, label: "Date of Birth", value: "Jan 4, 2006" },*/
     { icon: MapPin, label: "Location", value: "Haripur, Pakistan" },
     { icon: Mail, label: "Email", value: "saifulislam54956@gmail.com" },
   ];
